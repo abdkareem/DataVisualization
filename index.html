@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Coding Challenge</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="d3v3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- modal containing instructions on how to switch between different graphs -->  
+        <div id="howTo" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal">&times;</button>
+					    <h3 class="modal-title">Brief summary and instructions on how to switch between graphs.</h3>
+				    </div>
+                    <div class="modal-body">
+                        <p>
+                            The city of Phuket, capital of Phuket province within the boundaries of The Kingdom of Thailand is increasingly 
+                            becoming popular as vacation destination during the Christmas / New Year season. Other cities in the race are Ho 
+                            Chi Minh (Vietnam) and Goa (India). The average temperature in these cities plays curicial in occupying top slots. 
+                            Besides temperature, the economy of these countries provides advantage when compared to the likes of Dubai. 
+                            While the temperature difference between Phuket, Goa and Ho Chi Minh city is not distinct, it is Phukets over all 
+                            development and excellent tourism.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- following division contains all the buttons to plot graph between main city and choosen city and back to default graph -->
+        <div id="titleCateg">
+            <h3>Phuket - Popular destination during cold wave</h3>
+            <div class="row btnspc">
+                <div class="form-group" id="parent">
+                        <div class="col-xs-3 col-pull-xs-9 col-sm-12 col-md-12 col-lg-12">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary btn-sm active">
+                                    <input type="radio" name="options" id="ac" autocomplete="off" checked> All Cities
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="vn" autocomplete="off"> vs  Ho Chi Minh City
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="cn" autocomplete="off"> vs  Beijing
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="goa" autocomplete="off"> vs  Goa
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="sfo" autocomplete="off"> vs  San Francisco
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="nyc" autocomplete="off"> vs  New York City
+                                </label>
+                                <label class="btn btn-primary btn-sm">
+                                    <input type="radio" name="options" id="lon" autocomplete="off"> vs  London
+                                </label>
+                            </div>
+                        </div>   
+                </div>
+            </div>
+        </div>
+        
+        <!-- empty division -->
+        <div class="chartspc"></div>  
+
+        <!-- graphs division -->
+        <div id="chart"></div>
+
+        <!-- division containing buttons for hot destination and how to understand graphs -->
+        <div id="info">
+            <div class="row">
+                <div class="col-xs-2">
+                    <button type="button" id="showInstructions" class="btn btn-warning btn-md">How to use ?</button>
+                </div>
+                <div class="col-xs-2">
+                    <button type="button" class="btn btn-danger btn-md">Hot Destinations</button>
+                </div> 
+            </div>  
+        </div>
+    </div>
+    <script src="jqc3.js"></script>
+    <script src="d3script.js"></script>
+</body>
+</html>
