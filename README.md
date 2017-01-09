@@ -22,6 +22,6 @@ Technologies used: C3js for visualization, Ajax to make API calls to openweather
 To clone the repository to your local directory
 
     Navigate to your preferred location
-    Then use, git clone https://github.com/abdkareem/coding-challenge_Bb.git
-    Using any modern browser, open coding-challenge.html Note: coding-challenge.html uses external js libraries through CDN and an active internet connection is required to view the result.
+    Then use, $ git clone https://github.com/abdkareem/DataVisualization.git
+    Using any modern browser, open coding-challenge.html Note: index.html uses external js libraries through CDN and an active internet connection is required to view the result.
 
