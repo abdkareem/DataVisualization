@@ -2,7 +2,8 @@
 
 DataVisualization is a web page for real time weather forecast data visualization using C3js and D3js libraries. A story has been given to this data to comapare and show how one city as edge over other cities to become a potential holiday destination.
 
-##Phuket - A popular destination during cold wave. Among many tourist destinations across the globe, Phuket is increasingly becoming popular during late calendar months. The graph shows how Phuket’s warm temperature plays deciding factor for tourists planning to have a Warm Christmas / New Year.
+##Phuket - A popular destination during cold wave. 
+Among many tourist destinations across the globe, Phuket is increasingly becoming popular during late calendar months. The graph shows how Phuket’s warm temperature plays deciding factor for tourists planning to have a Warm Christmas / New Year.
 
 All cities (default) graph shows average temperature* for popular tourist destinations across the world.
 
